@@ -117,6 +117,16 @@ wget https://repo1.maven.org/maven2/com/nvidia/xgboost4j_3.0/1.4.2-0.2.0/xgboost
 wget https://repo1.maven.org/maven2/com/nvidia/xgboost4j-spark_3.0/1.4.2-0.2.0/xgboost4j-spark_3.0-1.4.2-0.2.0.jar
 ```
 
+## Step 4 - Download the Datasets and the Application Files.
+
+We will use mortgage, agaricus and taxi datasets for XGboost examples. All datasets and jupyter notebooks are placed in this repository.&#x20;
+
+* [x] Clone this repository to /opt/xgboost directory.
+
+
+
+
+
 ### Reference Repository:
 
 {% embed url="https://github.com/NVIDIA/spark-rapids-examples" %}
