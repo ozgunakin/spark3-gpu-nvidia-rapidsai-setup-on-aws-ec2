@@ -125,4 +125,4 @@ It's all set. You are good to go for GPU based XGboost applications :)
 
 ### Reference Repository:
 
-{% embed url="https://github.com/NVIDIA/spark-rapids-examples" %}
+[https://github.com/NVIDIA/spark-rapids-examples](https://github.com/NVIDIA/spark-rapids-examples)
