@@ -123,7 +123,22 @@ We will use mortgage, agaricus and taxi datasets for XGboost examples. All datas
 
 * [x] Clone this repository to /opt/xgboost directory.
 
+```
+cd /opt/xgboost
 
+git clone https://github.com/ozgunakin/spark3-gpu-nvidia-rapidsai-setup-on-aws-ec2.git
+
+cd spark3-gpu-nvidia-rapidsai-setup-on-aws-ec2/dataset
+
+#EXTRACT AGARICUS FILES
+tar -xvf agaricus-small.tar
+
+#EXTRACT MORTGATE FILES
+tar -xvf mortgage-small-2.tar
+
+#EXTRACT TAXI FILES
+tar -xvf taxi-small.tar
+```
 
 
 
