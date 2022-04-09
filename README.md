@@ -1,4 +1,4 @@
-# Spark3 GPU Setup with Nvidia Rapidsai on AWS EC2
+# Spark3 GPU Setup and Applications with Nvidia Rapidsai on AWS EC2
 
 This is a step-by-step guide for setting up GPU-based Spark with Nvidia Rapids on AWS EC2.
 
@@ -88,6 +88,10 @@ spark.worker.resource.gpu.discoveryScript /opt/spark-3.2.1-bin-hadoop3.2/example
 $SPARK_HOME/sbin/start-master.sh
 $SPARK_HOME/sbin/start-slave.sh spark://$HOSTNAME:7077
 ```
+
+## Step 3 - Download Necessary Jar Files
+
+Cuda, Rapid and XGboost
 
 ### Reference Repository:
 
