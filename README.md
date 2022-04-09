@@ -91,7 +91,31 @@ $SPARK_HOME/sbin/start-slave.sh spark://$HOSTNAME:7077
 
 ## Step 3 - Download Necessary Jar Files
 
-Cuda, Rapid and XGboost
+Cuda, Rapid, and XGboost drivers are necessary to be able to execute the GPU applications whşch we will see in the next steps.
+
+* [x] Create an application directory.
+
+```
+mkdir /opt/xgboost
+```
+
+* [x] Download Jar Files in the application directory.
+
+```
+#Go to the application directory.
+cd /opt/xgboost
+
+#CUDA
+wget https://repo1.maven.org/maven2/ai/rapids/cudf/22.02.0/cudf-22.02.0-cuda11.jar
+
+#RAPIDS
+wget https://repo1.maven.org/maven2/com/nvidia/rapids-4-spark_2.12/22.02.0/rapids-4-spark_2.12-22.02.0.jar
+
+#XGBOOST
+wget https://repo1.maven.org/maven2/com/nvidia/xgboost4j_3.0/1.4.2-0.2.0/xgboost4j_3.0-1.4.2-0.2.0.jar
+
+wget https://repo1.maven.org/maven2/com/nvidia/xgboost4j-spark_3.0/1.4.2-0.2.0/xgboost4j-spark_3.0-1.4.2-0.2.0.jar
+```
 
 ### Reference Repository:
 
