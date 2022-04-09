@@ -140,6 +140,17 @@ tar -xvf mortgage-small-2.tar
 tar -xvf taxi-small.tar
 ```
 
+## GPU Based XGBoost Applications
+
+You can find notebooks for XGBoost applications designed by using three different datasets in the notebooks directory of the repository that we have downloaded in the previous section.
+
+* [ ] Open Jupyter Notebook in /opt/xgboost directory.
+
+```
+```
+
+####
+
 
 
 ### Reference Repository:
