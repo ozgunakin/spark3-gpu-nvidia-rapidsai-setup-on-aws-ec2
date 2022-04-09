@@ -36,18 +36,48 @@ sudo chown -R ubuntu:ubuntu /opt
 cd /opt
 ```
 
-* [x] Download Spark3 and extract the files. (We will use 3.2.1 version. If the link does not work find a proper download link from [https://spark.apache.org](https://spark.apache.org))
+* [x] Download Spark3 and extract the files. (We will use 3.2.1 version. If the link does not work, find a proper download link from [https://spark.apache.org](https://spark.apache.org))
 
 ```
 wget https://dlcdn.apache.org/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz
 
 tar -xvf spark-3.2.1-bin-hadoop3.2.tgz
 
-#You can remove the tgz file after extract the files.
+#You can remove the tgz file after extracting the files.
 rm spark-3.2.1-bin-hadoop3.2.tgz
 ```
 
-*
+* [x] Add Spark Home into bashrc file.
+
+```
+#1-Open bashrc file of your user.
+nano ~/.bashrc
+
+#2-Add the following lines and save the file.
+
+#SPARK3
+export SPARK_HOME=/opt/spark-3.2.1-bin-hadoop3.2
+export PYSPARK_PYTHON=/usr/bin/python3
+
+#3-Source bashrc.
+source ~/.bashrc
+```
+
+* [ ] Add some GPU configurations into the config file of Spark.
+
+```
+cd ${SPARK_HOME}/conf
+
+cp spark-env-sh.template spark-env-sh
+
+nano spark-env-sh
+
+#Add the following lines and save the file.
+
+
+```
+
+
 
 ### Reference Repository:
 
