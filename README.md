@@ -50,34 +50,44 @@ rm spark-3.2.1-bin-hadoop3.2.tgz
 * [x] Add Spark Home into bashrc file.
 
 ```
-#1-Open bashrc file of your user.
+#Step1 - Open bashrc file of your user.
 nano ~/.bashrc
 
-#2-Add the following lines and save the file.
+#Step2 - Add the following lines and save the file.
 
 #SPARK3
 export SPARK_HOME=/opt/spark-3.2.1-bin-hadoop3.2
 export PYSPARK_PYTHON=/usr/bin/python3
 
-#3-Source bashrc.
+#Step3 - Source bashrc.
 source ~/.bashrc
 ```
 
-* [ ] Add some GPU configurations into the config file of Spark.
+* [x] Add some GPU configurations into the config file of Spark.
 
 ```
+#Step1 - Go to Spark config directory.
 cd ${SPARK_HOME}/conf
 
-cp spark-env-sh.template spark-env-sh
+#Step2 - Create sh file from the template.
+cp spark-defaults.conf.template spark-defaults.conf
 
-nano spark-env-sh
+#Step3 - Open the file.
+nano spark-defaults.conf
 
-#Add the following lines and save the file.
+#Step4 - Add the following lines and save the file.
 
+spark.worker.resource.gpu.amount  1
+spark.worker.resource.gpu.discoveryScript /opt/spark-3.2.1-bin-hadoop3.2/examples/src/main/scripts/getGpusResources$
 
 ```
 
+* [x] Start Spark Master and Spark Worker.
 
+```
+$SPARK_HOME/sbin/start-master.sh
+$SPARK_HOME/sbin/start-slave.sh spark://$HOSTNAME:7077
+```
 
 ### Reference Repository:
 
