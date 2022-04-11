@@ -2,8 +2,6 @@
 
 ### These instructions are prepared for "Introduction to Deep Learning with Apache Spark" lectures given by Prof. Dr. Altan Çakır in "DeepLearn 2022 Spring - 5th International School on Deep Learning" <a href="#these-instructions-are-prepared-for-introduction-to-deep-learning-with-apache-spark-lectures-given-b" id="these-instructions-are-prepared-for-introduction-to-deep-learning-with-apache-spark-lectures-given-b"></a>
 
-This is a step-by-step guide for setting up GPU-based Spark with Nvidia Rapids on AWS EC2.
-
 ## Step 1 - Launch an EC2 Instance on AWS
 
 * [x] Select Deep Learning AMI while you are in eu-west-2 region.
