@@ -4,7 +4,7 @@
 
 ## Step 1 - Launch an EC2 Instance on AWS
 
-* [x] Select Deep Learning AMI while you are in eu-west-2 region.
+* [x] Select Deep Learning AMI while you are in us-west-2 region. You may not find this image in Quickstart AMI's, then you need to search it in Community AMI's section.
 
 ![AWS AMI Selection](<.gitbook/assets/image (4).png>)
 
