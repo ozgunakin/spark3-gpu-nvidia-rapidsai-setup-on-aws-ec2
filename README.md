@@ -121,7 +121,7 @@ wget https://repo1.maven.org/maven2/com/nvidia/xgboost4j-spark_3.0/1.4.2-0.2.0/x
 
 It's all set. You are good to go for GPU based XGboost applications :)
 
-## ! Click the link below to continue with GPU based Spark Xgboost applications.
+## Let's continue with GPU based Spark Xgboost applications :).
 [https://github.com/ozgunakin/spark3-gpu-xgboost-applications](https://github.com/ozgunakin/spark3-gpu-xgboost-applications)
 
 ####
