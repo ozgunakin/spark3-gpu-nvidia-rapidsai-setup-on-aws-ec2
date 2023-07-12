@@ -1,6 +1,6 @@
 # Spark3 GPU Setup and Applications with Nvidia Rapidsai on AWS EC2
 
-### These instructions are prepared for "Introduction to Deep Learning with Apache Spark" lectures given by Prof. Dr. Altan Çakır in "DeepLearn 2022 Spring - 5th International School on Deep Learning" <a href="#these-instructions-are-prepared-for-introduction-to-deep-learning-with-apache-spark-lectures-given-b" id="these-instructions-are-prepared-for-introduction-to-deep-learning-with-apache-spark-lectures-given-b"></a>
+### These instructions are prepared for "Introduction to Big Data with Apache Spark" lectures given by Prof. Dr. Altan Çakır in "BigDat 2023 Summer - 7th International School on Big Data"
 
 ## Step 1 - Launch an EC2 Instance on AWS
 
@@ -39,7 +39,7 @@ cd /opt
 * [x] Download Spark3 and extract the files. (We will use 3.2.1 version. If the link does not work, find a proper download link from [https://spark.apache.org](https://spark.apache.org))
 
 ```
-wget https://dlcdn.apache.org/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz
+wget https://archive.apache.org/dist/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz
 
 tar -xvf spark-3.2.1-bin-hadoop3.2.tgz
 
